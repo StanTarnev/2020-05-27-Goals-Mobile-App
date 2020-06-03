@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Header from './components/Header';
 
 export default class App extends React.Component {
   constructor() {
@@ -17,7 +18,9 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-      <View style={styles.statusbar}></View>
+        <View style={styles.statusbar}></View>
+
+        <Header title="Goals" />
       </View>
     );
   }
