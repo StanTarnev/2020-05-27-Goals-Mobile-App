@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Header from './components/Header';
+import InputBar from './components/InputBar';
 
 export default class App extends React.Component {
   constructor() {
@@ -21,6 +22,8 @@ export default class App extends React.Component {
         <View style={styles.statusbar}></View>
 
         <Header title="Goals" />
+
+        <InputBar />
       </View>
     );
   }
